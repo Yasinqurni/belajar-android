@@ -71,7 +71,7 @@ fun UserChat(name: String, msg: String, modifier: Modifier = Modifier) {
         modifier = modifier.padding(4.dp).height(80.dp)
     ) {
         Image(
-            painter = painterResource(R.drawable.ic_launcher_foreground),
+            painter = painterResource(R.drawable.ic_cat_cute),
             contentDescription = null,
             modifier = modifier
                 .padding(4.dp)
@@ -86,6 +86,7 @@ fun UserChat(name: String, msg: String, modifier: Modifier = Modifier) {
             Icon(
                 imageVector = Icons.Default.CheckCircle,
                 contentDescription = null,
+                tint = Color.Blue,
                 modifier = modifier.align(Alignment.End),
             )
         }
@@ -96,6 +97,6 @@ fun UserChat(name: String, msg: String, modifier: Modifier = Modifier) {
 @Composable
 fun UserCHatPreview() {
     BelajarAndroidTheme {
-        UserChat(name = "Lala", msg = "Anak Cantik Ku")
+        UserChat(name = "Lala", msg = "Anak cantik ku")
     }
 }
